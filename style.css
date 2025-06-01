@@ -417,5 +417,80 @@ span{
     }
 }
 
+.education-section {
+  padding: 6rem 2rem;
+  background: #0e0e0e;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.education-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
+.education-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #ff4c4c;
+}
+
+.education-entry h2 {
+  color: #b74b4b;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-entry {
+  background: rgba(255, 76, 76, 0.05);
+  border-left: 5px solid #ff4c4c;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 76, 76, 0.15);
+      opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.education-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.education-entry:hover {
+  transform: scale(1.02);
+}
+
+.education-entry h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff4c4c;
+}
+
+.education-entry p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.course-list {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+.quote-box {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  border: 2px dashed #ff4c4c;
+  background-color: rgba(255, 76, 76, 0.1);
+}
