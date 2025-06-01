@@ -228,7 +228,7 @@ footer {
   font-size: 0.9rem;
 }
 
-#project1-container {
+#project-container {
     min-height: 100%;
     display: flex;
     flex-direction: row;
@@ -238,7 +238,7 @@ footer {
     gap: 4rem;
 }
 
-#project1-sidebar {
+#project-sidebar {
     width: 220px;
     background-color: black;
     padding: 20px;
@@ -257,18 +257,18 @@ footer {
     
 }
 
-#project1-sidebar ul {
+#project-sidebar ul {
     list-style: none;
     padding: 0;
 
 }
 
-#project1-sidebar li {
+#project-sidebar li {
     margin-bottom: 10px;
     transition: background-color 0.2s ease, padding-left 0.2s ease;
 }
 
-#project1-sidebar a {
+#project-sidebar a {
     text-decoration: none;
     color: #b74b4b;
     font-weight: bold;
@@ -278,20 +278,20 @@ footer {
     border-radius: 5px;
 }
 
-#project1-sidebar a:hover {
+#project-sidebar a:hover {
     color: #000000;
     transform: translateX(5px);
     background-color: #ff3939;
     
 }
 
-#project1-sidebar a.active {
+#project-sidebar a.active {
     color: #a02929;
     background-color: #000000;
     font-weight: bold;
 }
 
-#project1-page {
+#project-page {
     flex: 1;
     background-color: black;
     padding: 40px;
@@ -304,15 +304,15 @@ footer {
     padding-bottom: 100px;
 }
 
-#project1-page h1,
-#project1-page h2,
-#project1-page h3 {
+#project-page h1,
+#project-page h2,
+#project-page h3 {
     color: #b74b4b;
     margin-bottom: 10px;
 }
 
-#project1-page p,
-#project1-page li {
+#project-page p,
+#project-page li {
     color: #ffffff;
     line-height: 1.6;
     margin-bottom: 10px;
