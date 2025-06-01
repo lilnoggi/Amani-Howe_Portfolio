@@ -392,8 +392,7 @@ span{
     margin-left: 50rem;
     margin-bottom: 50rem;
     font-size: 2.5rem;
-    align-items: center;
-    align-self: center;
+text-align: center;
     padding-right: 55rem;
 }
 
@@ -408,6 +407,9 @@ span{
     flex: 2;
     min-width: 330px;
     position:absolute
+}
+.skills-description p {
+  margin-top: 50px;
 }
 
 @media (max-width: 900px) {
