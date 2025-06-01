@@ -202,27 +202,21 @@ span{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: "software Developer";
     color: #b74b4b;
-    animation: words 20s infinite;
+    position:relative;
 }
 
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
+.typing-text::after{
+    content: '|';
+    position:absolute;
+    right: -10px;
+    animation: blink 0.7s steps(2) infinite;
+    color: #b74b4b;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
 }
 
 @keyframes cursor{
