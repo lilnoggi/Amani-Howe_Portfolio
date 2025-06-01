@@ -38,10 +38,12 @@ header{
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: black;
-    color: #fff;
+  background-color: black;
+  color: #b74b4b;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
 
 .logo{
@@ -418,20 +420,22 @@ span{
 }
 
 .education-section {
-  padding: 6rem 2rem;
-  background: #0e0e0e;
-  color: #fefefe;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    /* Center the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* fill most of viewport height */
+    padding: 0 2rem;  /* keep some side padding */
+    flex-direction: column; /* stack children vertically */
 }
 
 .education-container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;  /* center horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .education-container h1 {
@@ -493,4 +497,69 @@ span{
   text-align: center;
   border: 2px dashed #ff4c4c;
   background-color: rgba(255, 76, 76, 0.1);
+}
+
+.experience-section {
+    /* Center the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* fill most of viewport height */
+    padding: 0 2rem;  /* keep some side padding */
+    flex-direction: column; /* stack children vertically */
+}
+
+.experience-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;  /* center horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.experience-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #ff4c4c;
+}
+
+/* Category Styling */
+.experience-category {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.experience-category h2 {
+  color: #b74b4b;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Entry Cards */
+.experience-entry {
+  background: rgba(255, 76, 76, 0.05);
+  border-left: 5px solid #ff4c4c;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 76, 76, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.experience-entry:hover {
+  transform: scale(1.02);
+}
+
+.experience-entry h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff4c4c;
+}
+
+.experience-entry p {
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
