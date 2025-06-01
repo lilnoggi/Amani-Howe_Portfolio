@@ -563,3 +563,48 @@ span{
   font-size: 1.4rem;
   line-height: 1.6;
 }
+
+.contact-section {
+    min-height: 100vh;
+    padding: 10rem 9% 5rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 4rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+
+.contact-container p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background-color: #161616;
+    color: white;
+    border: 1px solid #b74b4b;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff4c4c;
+    box-shadow: 0 0 10px #b74b4b;
+}
