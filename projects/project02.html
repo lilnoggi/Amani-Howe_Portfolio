@@ -19,6 +19,254 @@
             <a href="../contact.html" >Contact</a>
         </nav>
     </header>
+        <div id="project-container">
+            <nav id="project-sidebar">
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#concept">Game Concept</a></li>  
+                    <li><a href="#gameplay-loop">Core Gameplay Loop</a></li>
+                    <li><a href="#currency">Currency</a></li>
+                    <li><a href="#progression-system">Progress System</a></li>
+                    <li><a href="#systems-needed">Systems Needed</a></li>
+                    <li><a href="#visual-style">Visual Style</a></li>
+                    <li><a href="#ui-overview">UI Overview</a></li>
+                    <li><a href="#future-goals">Goals</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </nav>
+        
+        <main>
+        <div id="project-page">
+        <section id="intro">
+            <h1><u><i class="fa-solid fa-list-check"></i>Idle Tycoon/Management Game</u></h1>
+            <h2><strong>Game Design Document (GDD) for <i>Brainrot Tycoon (working title)</i></strong></h2>
+        </section>
 
+        <section id="concept">
+            <h1><u><i class="fa-solid fa-bullseye"></i>Game concept</u></h1>
+            <p>A chaotic, internet-themed idle/tycoon game where you build a growing "brainrot empire" by clicking for Brainrot, buying silly upgrades, and expanding a colourful isometric world full of cursed internet landmarks.</p>
+            <ul>
+                <li><strong>Click</strong> to generate Brainrot Manually.</li>
+                <li><strong>Buy upgrades</strong> to passively generate Brainrot over time.</li>
+                <li><strong>Expand</strong> your base by spawning meme factories, TikTok dance floors, Discord servers, internt shrines, and more.</li>
+                <li><strong>Unlock Shayla characters</strong> to provide boosts or special bonuses.</li>
+                <li><strong>Earn Shayla Creds</strong> (premium currency) to buy super cursed upgrades.</li>
+            </ul>
+            <p><strong>Tone:</strong> Silly, chaotic, meme-core, pastel/neon colours, constant brainrot energy.</p>
+    </section>
+
+    <section id="gameplay-loop">
+        <h1><strong>🎮Core Gameplay Loop</strong></h1>
+        <ol>
+            <li><strong>Click</strong> the Big Brainrot Button to generate Brainrot manually.</li>
+            <li><strong>Spend Brainrot</strong> in the Shop to buy upgrades (buildings/machines).</li>
+            <li><strong>Buildings</strong> are automatically placed into the world.</li>
+            <li><strong>Buildings</strong> Generate Brainrot <strong>passively</strong> over time.</li>
+            <li><strong>Expand</strong> your empire, unlocking more upgrades, boosting your Brainrot production.</li>
+            <li><strong>Use Shayla Creds</strong> to unlock <strong>special mega-upgrades</strong> or <strong>powerful characters.</strong></li>
+        </ol>
+    </section>
+
+    <section id="currency">
+        <h1><strong><i class="fa-solid fa-bullseye"></i>Currencies</strong></h1>
+        <ul>
+            <li><strong>Brainrot:</strong> Main currency, earned by clicking or passively.</li>
+            <li><strong>Shayla Creds:</strong> Special currency earned through milestones, used for high-tier upgrades.</li>
+        </ul>
+    </section>
+
+    <section id="progression-system">
+        <h1><strong><i class="fa-solid fa-bars-progress"></i>Progression System</strong></h1>
+        <table>
+            <tr>
+                <th><strong>Progress</strong></th>
+                <th><strong>Unlocks</strong></th>
+            </tr>
+            <tr>
+                <td>Earn 100 Brainrot</td>
+                <td>First Passive machine (e.g. "Tiny Meme Server")</td>
+            </tr>
+            <tr>
+                <td>Build 5 machines</td>
+                <td>Unlock Shayla helper (e.g. Summer joins and boosts production)</td>
+            </tr>
+            <tr>
+                <td>Reach 1K Brainrot</td>
+                <td>Unlock new upgrade tier (YouTube Brainrot Factories)</td>
+            </tr>
+            <tr>
+                <td>etc</td>
+                <td>Keep expanding empire with bigger weirder things</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="systems-needed">
+        <h1><strong>🛠Systems Needed</strong></h1>
+        <ul>
+            <li><strong>Clicker Manager</strong> (brainrot clicker)</li>
+            <li><strong>Shop Manager</strong> (buy upgrades/buildings)</li>
+            <li><strong>Building Spawner</strong> (places buildings on the world when bought)</li>
+            <li><strong>Passive Income System</strong> (brainrot earned per second)</li>
+            <li><strong>Shayla Creds System</strong> (special rewards)</li>
+            <li><strong>Simple Save System</strong> (save the game)</li>
+        </ul>
+    </section>
+
+    <section id="visual-style">
+        <h1><strong><i class="fa-solid fa-palette"></i>Visual Style</strong></h1>
+        <ul>
+            <li><strong>Isometric 2.5D</strong> (simple low-poly or cartoony sprites)</li>
+            <li><strong>Colour Palette:</strong> Pastel, neon, bright chaotic colours</li>
+            <li><strong>Silly Decorations:</strong> Giant emojis, pixel phones, meme clouds</li>
+            <li><strong>Funny Animated Characters:</strong> Mini Sam, Summer, Erin, Mani walking around.</li>
+        </ul>
+    </section>
+
+    <section id="early-upgrades">
+    <h1><strong><i class="fa-regular fa-circle-up"></i>Example Early Upgrades</strong></h1>
+    <table>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Cost</strong></th>
+            <th><strong>Effect</strong></th>
+        </tr>
+        <tr>
+            <td>Tiny Meme Server</td>
+            <td>50 Brainrot</td>
+            <td>+1 Brainrot/sec</td>
+        </tr>
+        <tr>
+            <td>TikTok Dance Floor</td>
+            <td>250 Brainrot</td>
+            <td>+5 Brainrot/sec</td>
+        </tr>
+        <tr>
+            <td>Discord Dungeon</td>
+            <td>500 Brainrot</td>
+            <td>+10 Brainrot/sec</td>
+        </tr>
+        <tr>
+            <td>Cursed Viral Machine</td>
+            <td>1000 Brainrot</td>
+            <td>+20 Brainrot/sec</td>
+        </tr>
+        <tr>
+            <td>Shayla Streaming Tower</td>
+            <td>5000 Brainrot</td>
+            <td>+50 Brainrot/sec</td>
+        </tr>
+    </table>
+    </section>
+
+    <section id="ui-overview">
+        <h1><strong>📱UI Overview</strong></h1>
+        <ul>
+            <li><strong>Top:</strong> Brainrot Counter + Shayla Creds Counter</li>
+            <li><strong>Center-Left:</strong> Big Brainrot Click Button</li>
+            <li><strong>Center/World:</strong> Isometric World where buildings appear</li>
+            <li><strong>Bottom-Right:</strong> Shop button → opens panel with upgrades</li>
+            <li><strong>Floating Panels:</strong> For unlocked Shayla helpers and boosts</li>
+        </ul>
+    </section>
+
+    <section id="future-goals">
+        <h1><strong><i class="fa-regular fa-circle-dot"></i>Future Stretch Goals</strong></h1>
+        <ul>
+            <li><strong>Achievements</strong> (earn Brainrot bonuses)</li>
+            <li><strong>Funny Pop-Up Notifications</strong> ("Your meme factory caught fire!")</li>
+            <li><strong>Random Events</strong> ("TikTok trend boost: production +200% for 1 minute!")</li>
+            <li><strong>World Expansion</strong> (map scrolling/unlocking new zones)</li>
+        </ul>
+    </section>
+
+    <section id="summary">
+        <h1><strong><i class="fa-solid fa-clipboard-list"></i>Summary</strong></h1>
+        <p><strong>Brainrot Tycoon</strong>Brainrot Tycoon is a cartoony, chaotic idle game where you build the dumbest, most cursed internet empire possible.<br>Click for brainrot, expand your world with servers, memes, dances, and unleash Shayla chaos across the globe.</p>
+        <h3><strong><i class="fa-regular fa-square-check"></i>What This Taught Me:</strong></h3>
+        <h4><strong><i class="fa-solid fa-cubes"></i>Game Design Concepts</strong></h4>
+        <ul>
+            <li><strong>Tycoon loop structure:</strong> I developed a core progression loop - starting from zero, buying the first upgrade to generate income leading to further upgrades.</li>
+        </ul>
+        <h4><strong><i class="fa-solid fa-laptop-code"></i>Unity & C# Implementation</strong></h4>
+        <ul>
+            <li>Begain building scripts like <i>ShopManager</i>.</li>
+            <li>Worked with Unity UI elements for shop interactions.</li>
+            <li>Created and tested systems for spending currency and triggering events.</li>
+        </ul>
+        <h4><strong><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Skills Used</strong></h4>
+        <ul>
+            <li>Unity (C# scripting, UI, prefabs)</li>
+            <li>Script organisation and code reworking</li>
+            <li>Economy balancing fundamentals</li>
+            <li>GDD and planning</li>
+        </ul>
+    </section>
+
+    </div>
+</main>
+</div>
+
+<script>
+    // Wait for the DOM to load before attaching event listeners
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('#project1-sidebar a'); // Sidebar links
+        const sections = document.querySelectorAll('section'); // All sections on the page
+        
+        // Function to highlight the active link based on scrolling
+        function highlightActiveLink() {
+            let found = false;
+            
+            // Loop through sections
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                
+                // Check if section is in view
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+                    const id = section.getAttribute('id');
+                    const link = document.querySelector(`#project1-sidebar a[href="#${id}"]`);
+                    
+                    // Remove the active class from all links
+                    links.forEach(link => link.classList.remove('active'));
+                    
+                    // Add the active class to the current link
+                    if (link) {
+                        link.classList.add('active');
+                    }
+                    
+                    found = true;
+                }
+            });
+
+            // If no section is in view, remove the active class from all links
+            if (!found) {
+                links.forEach(link => link.classList.remove('active'));
+            }
+        }
+
+        // Run the highlight function when scrolling
+        window.addEventListener('scroll', highlightActiveLink);
+
+        // Also run the function when the page loads
+        highlightActiveLink();
+
+        // Attach the smooth scroll behavior to each link
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                
+                const targetId = link.getAttribute('href').substring(1); // Get the section ID (e.g., 'intro')
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100, // Adjust the offset to account for the fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
     </body>
     </html>

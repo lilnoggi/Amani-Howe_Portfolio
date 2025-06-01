@@ -21,6 +21,7 @@ body{
     background-color: black;
     color: white;
     font-size: 15px;
+    align-items: center;
 }
 
 header{
