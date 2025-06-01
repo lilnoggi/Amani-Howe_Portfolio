@@ -267,31 +267,142 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
-
-    .skills-section {
-    padding: 2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #222;
 }
 
-.skills-section h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
+.skills-section {
+    /* Center the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* fill most of viewport height */
+    padding: 0 2rem;  /* keep some side padding */
+    flex-direction: column; /* stack children vertically */
+}
+
+.skills-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;  /* center horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .skills-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2rem;
+  position: relative;
+  margin-left: -5rem;
+  width: 40%;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem; /* space inside for border */
+  border-radius: 20px; /* softer, rounder edges */
+  border: 0px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    #b74b4b,
+    #ff4c4c,
+    #e6cccc,
+    #ff4c4c,
+    #b74b4b
+  );
+  border-image-repeat: round;
+
+  /* Glow shadow */
+  box-shadow:
+    0 0 12px 2px rgba(183, 75, 75, 0.7),
+    0 0 24px 6px rgba(255, 76, 76, 0.5);
+
+  /* Animate the gradient on the border */
+  animation: glowing-border 3s linear infinite, glowing-shadow 3s ease-in-out infinite;
+}
+
+/* Keep the border gradient animation */
+@keyframes glowing-border {
+  0% {
+    border-image-source: linear-gradient(
+      90deg,
+      #b74b4b,
+      #ff4c4c,
+      #b74b4b,
+      #ff4c4c,
+      #b74b4b
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      450deg,
+      #b74b4b,
+      #ff4c4c,
+      #b74b4b,
+      #ff4c4c,
+      #b74b4b
+    );
+  }
+}
+
+/* Animate the glow intensity */
+@keyframes glowing-shadow {
+  0%, 100% {
+    box-shadow:
+      0 0 12px 2px rgba(183, 75, 75, 0.7),
+      0 0 24px 6px rgba(255, 76, 76, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 20px 4px rgba(183, 75, 75, 0.9),
+      0 0 35px 10px rgba(255, 76, 76, 0.8);
+  }
 }
 
 .skills-list li {
-    background: #eee;
-    margin: 0.5rem 0;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    font-size: 1.8rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    /*box-shadow: 0 0 15px #b74b4b;*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
 }
+
+.skills-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b, 0 0 40px #b74b4b;
+    background-color: rgba(183, 75, 75, 0.1); /* subtle red tint */
 }
+
+.skills-list h1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.skills-description {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .skills-container {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .skills-list,
+    .skills-description {
+        width: 100%;
+        text-align: center; /* center text on smaller screens */
+        font-size: 1.8rem;
+    }
+
+    .skills-list li {
+        font-size: 1.5rem;
+        padding: 1rem 1.2rem;
+    }
+}
+
+
+
