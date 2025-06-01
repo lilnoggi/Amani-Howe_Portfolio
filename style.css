@@ -52,6 +52,19 @@ footer {
     transition: 0.5s ease;
 }
 
+.logo a{
+        font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo p{
+font-size: 1.2rem;
+color: #fff;
+}
+
 .logo:hover{
     transform: scale(1.1);
 }
@@ -227,13 +240,13 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Web Developer";
+        content: "Programmer";
     }
     21%, 40%{
         content: "Developer";
     }
     41%, 60%{
-        content: "Programmer";
+        content: "Web Developer";
     }
     61%, 80%{
         content: "Video Editor";
