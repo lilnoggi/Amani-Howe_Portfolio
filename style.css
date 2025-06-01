@@ -608,3 +608,27 @@ span{
     border-color: #ff4c4c;
     box-shadow: 0 0 10px #b74b4b;
 }
+
+.thankyou-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 4rem;
+  text-align: center;
+}
+
+.thankyou-container {
+  max-width: 600px;
+}
+
+.thankyou-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
