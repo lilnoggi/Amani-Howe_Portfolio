@@ -609,26 +609,70 @@ span{
     box-shadow: 0 0 10px #b74b4b;
 }
 
-.thankyou-section {
+/* Hidden by default */
+.hidden {
+  display: none;
+}
+
+/* Modal overlay */
+.thankyou-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
-  padding: 4rem;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* When shown */
+.thankyou-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal content with pop-out scale animation */
+.thankyou-content {
+  background-color: #161616;
+  border: 3px solid #b74b4b;
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  max-width: 400px;
   text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  transform: scale(0);
+  animation: popout 0.4s forwards;
+  box-shadow: 0 0 20px #b74b4b;
 }
 
-.thankyou-container {
-  max-width: 600px;
+@keyframes popout {
+  to {
+    transform: scale(1);
+  }
 }
 
-.thankyou-container h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.thankyou-container p {
+/* Style the close button */
+#close-thankyou {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
-  margin-bottom: 2rem;
+  background-color: #b74b4b;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+#close-thankyou:hover {
+  background-color: #ff4c4c;
+}
+
 
