@@ -267,4 +267,31 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+
+    .skills-section {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+.skills-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.skills-list li {
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
 }
