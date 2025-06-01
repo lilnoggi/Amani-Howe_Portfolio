@@ -559,9 +559,20 @@ span{
   color: #ff4c4c;
 }
 
+.experience-entry h4 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
 .experience-entry p {
   font-size: 1.4rem;
   line-height: 1.6;
+}
+
+.experience-entry a {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ff4c4c;
 }
 
 .contact-section {
