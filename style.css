@@ -715,4 +715,65 @@ text-align: center;
   background-color: #ff4c4c;
 }
 
+.project-section {
+  padding: 10rem 9% 5rem;
+  text-align: center;
+  color: #eee;
+}
+
+.project-title {
+  font-size: 4rem;
+  color: #b74b4b;
+  margin-bottom: 2rem;
+}
+
+.project-logo {
+  width: 40%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(183, 75, 75, 0.3);
+}
+
+.project-cover {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-description {
+  font-size: 1.6rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.project-description a {
+  color: #b74b4b;
+  text-decoration: underline;
+}
+
+.project-description a:hover {
+  color: #fff;
+}
+.extra-info {
+  text-align: left;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.extra-info h2 {
+  color: #b74b4b;
+  margin-top: 2rem;
+}
+
+.extra-info ul {
+  margin-left: 1.5rem;
+  list-style: square;
+}
+
 
