@@ -836,5 +836,42 @@ text-align: center;
     transform: translateY(0);
   }
 }
+/* ===== Assets Showcase Section ===== */
+.assets-section {
+  padding: 10rem 9% 5rem;
+  text-align: center;
+  background-color: #111; /* dark theme background */
+  color: #eee;
+}
+
+.assets-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.assets-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #b74b4b; /* same accent red */
+}
+
+.assets-section p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .assets-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .assets-section p {
+    font-size: 1.1rem;
+  }
+}
 
 
