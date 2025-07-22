@@ -727,21 +727,38 @@ text-align: center;
   margin-bottom: 2rem;
 }
 
+.project-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .project-media {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .project-logo {
-  width: 40%;
+  width: 100%;
   max-width: 400px;
-  margin-bottom: 2rem;
+  flex: 1 1 300px;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(183, 75, 75, 0.3);
 }
 
 .project-cover {
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
+  flex: 1 1 300px;
   border-radius: 1rem;
-  margin-bottom: 3rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 
 .project-description {
   font-size: 1.6rem;
@@ -774,6 +791,50 @@ text-align: center;
 .extra-info ul {
   margin-left: 1.5rem;
   list-style: square;
+}
+
+.devlog-section {
+  padding: 10rem 9% 5rem;
+  text-align: center;
+  color: #eee;
+}
+
+.devlog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+.devlog-cover {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.devlog-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #b74b4b;
+}
+
+.devlog-container p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Optional: Add subtle entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
