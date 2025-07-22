@@ -716,15 +716,16 @@ text-align: center;
 }
 
 .project-section {
-  padding: 10rem 9% 5rem;
+  padding: 1.5rem 9% 1rem;
   text-align: center;
   color: #eee;
+  border-bottom: 1px solid rgba(183, 75, 75, 0.3);
 }
 
 .project-title {
   font-size: 4rem;
   color: #b74b4b;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-media {
@@ -733,8 +734,8 @@ text-align: center;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
   .project-media {
@@ -761,10 +762,11 @@ text-align: center;
 
 
 .project-description {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
-  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 .project-description a {
@@ -777,7 +779,7 @@ text-align: center;
 }
 .extra-info {
   text-align: left;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   max-width: 800px;
   margin-inline: auto;
@@ -785,13 +787,55 @@ text-align: center;
 
 .extra-info h2 {
   color: #b74b4b;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .extra-info ul {
   margin-left: 1.5rem;
   list-style: square;
 }
+
+.project-subsection {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  padding: 0.25rem;
+  color: #eee;
+}
+
+.project-subsection h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #b74b4b;
+}
+
+.project-subsection ul,
+.project-subsection ol {
+  padding-left: 1.5rem;
+  line-height: 1.7;
+}
+
+.project-subsection table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.project-subsection table td {
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  color: #ccc;
+}
+
+blockquote {
+  font-style: italic;
+  color: #aaa;
+  border-left: 3px solid #b74b4b;
+  padding-left: 0.75rem;
+  margin: 0.75rem 0;
+}
+
 
 .devlog-section {
   padding: 10rem 9% 5rem;
