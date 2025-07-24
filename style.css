@@ -918,4 +918,41 @@ blockquote {
   }
 }
 
+/* Assets Grid */
+.gallery-section {
+  padding: 3rem 9%;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  background-color: #111;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(183, 75, 75, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 100%;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  max-height: 300px;
+  object-fit: contain;
+}
+
 
