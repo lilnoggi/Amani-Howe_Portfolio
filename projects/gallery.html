@@ -8,6 +8,29 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleryImages = document.querySelectorAll(".gallery-item img");
+
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        const overlay = document.createElement("div");
+        overlay.classList.add("lightbox-overlay");
+
+        const bigImg = document.createElement("img");
+        bigImg.src = img.dataset.full;
+
+        overlay.appendChild(bigImg);
+        document.body.appendChild(overlay);
+
+        overlay.addEventListener("click", () => {
+          overlay.remove();
+        });
+      });
+    });
+  });
+</script>
+
 <body>
   <header>
     <a href="../index.html" class="logo">Home</a>
@@ -23,76 +46,78 @@
 
   <section class="assets-section">
     <div class="assets-container">
-      <h1><i class="fa-solid fa-boxes-stacked"></i> Assets Showcase Coming Soon</h1>
+      <h1><i class="fa-solid fa-boxes-stacked"></i> Assets Showcase</h1>
       <p>Behind every great game is a pile of lovingly-crafted chaos. Check back soon to explore my pixel art, UI mockups, low poly models, and more.</p>
+      <p>Scroll for more.</p>
     </div>
   </section>
 
   <section class="project-section gallery-section" id="assets">
     <h2 class="assets-title">Gallery & Assets</h2>
+    <p>Click on an item to zoom.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="../media/assets_showcase/Ball.gif" alt="Simple Ball Bounce Animation">
+        <img src="../media/assets_showcase/Ball.gif" data-full="../media/assets_showcase/Ball.gif" alt="Simple Ball Bounce Animation">
         <h3>Bouncing Ball</h3>
         <p>One of my first attempts at animating with pixel art.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/FrogHop.gif" alt="Frog Hop Animation">
+        <img src="../media/assets_showcase/FrogHop.gif" data-full="../media/assets_showcase/FrogHop.gif" alt="Frog Hop Animation">
         <h3>Hopping Frog</h3>
         <p>Another one of my first attempts at animating with pixel art.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/The Black Rabbit.gif" alt="Rabbit Character Animation">
+        <img src="../media/assets_showcase/The Black Rabbit.gif" data-full="../media/assets_showcase/The Black Rabbit.gif" alt="Rabbit Character Animation">
         <h3>The Black Rabbit</h3>
         <p>Around 2021, I wanted to make a 2D platformer where you play as a rabbit. Shown is the sprite animations.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/The_Lab_Not_Test.gif" alt="Animated Science Lab Background">
+        <img src="../media/assets_showcase/The_Lab_Not_Test.gif" data-full="../media/assets_showcase/The_Lab_Not_Test.gif" alt="Animated Science Lab Background">
         <h3>The Lab - Level 1 - Zone 1</h3>
         <p>The Black Rabbit - Level 1 idea.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/zone2.png" alt="Science Lab Background 1">
+        <img src="../media/assets_showcase/zone2.png" data-full="../media/assets_showcase/zone2.png" alt="Science Lab Background 1">
         <h3>The Lab - Level 1 - Zone 2</h3>
         <p>The Black Rabbit - zone idea.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/zone3.png" alt="Science Lab Background 2">
+        <img src="../media/assets_showcase/zone3.png" data-full="../media/assets_showcase/zone3.png" alt="Science Lab Background 2">
         <h3>The Lab - Level 1 - Zone 3</h3>
         <p>The Black Rabbit - zone idea.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/zone4.png" alt="Science Lab Background 3">
+        <img src="../media/assets_showcase/zone4.png" data-full="../media/assets_showcase/zone4.png" alt="Science Lab Background 3">
         <h3>The Lab - Level 1 - Zone 4</h3>
         <p>The Black Rabbit - Unfinished zone idea.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/Upgradable1.png" alt="Upgrade Sprite">
+        <img src="../media/assets_showcase/Upgradable1.png" data-full="../media/assets_showcase/Upgradable1.png" alt="Upgrade Sprite">
         <h3>The Black Rabbit - Upgrade Sprite</h3>
         <p>Upgradeable sprite.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/Upgradable2.png" alt="Upgrade Sprite 2">
+        <img src="../media/assets_showcase/Upgradable2.png" data-full="../media/assets_showcase/Upgradable2.png" alt="Upgrade Sprite 2">
         <h3>The Black Rabbit - Upgrade Sprite 2</h3>
         <p>Upgradeable sprite.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/Finger Gun_shoot.gif" alt="Finger Gun Shoot Animation">
+        <img src="../media/assets_showcase/Finger Gun_shoot.gif" data-full="../media/assets_showcase/Finger Gun_shoot.gif" alt="Finger Gun Shoot Animation">
         <h3>Finger Gun Shoot</h3>
         <p>Shooting animation for the finger gun.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/Finger Gun_reload.gif" alt="Finger Gun Reload Animation">
+        <img src="../media/assets_showcase/Finger Gun_reload.gif" data-full="../media/assets_showcase/Finger Gun_Reload.gif" alt="Finger Gun Reload Animation">
         <h3>Finger Gun Reload</h3>
         <p>Reload animation for the finger gun.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/donuts_blender.JPG" alt="Donuts in Blender">
+        <img src="../media/assets_showcase/donuts_blender.JPG" data-full="../media/assets_showcase/donuts_blender.JPG" alt="Donuts in Blender">
         <h3>Donuts</h3>
         <p>Attempt at 3D modelling in Blender.</p>
       </div>
             <div class="gallery-item">
-        <img src="../media/assets_showcase/wine_and_grapes.png" alt="Wine and Grapes in Blender">
+        <img src="../media/assets_showcase/wine_and_grapes.png" data-full="../media/assets_showcase/wine_and_grapes.png" alt="Wine and Grapes in Blender">
         <h3>Wine and Grapes</h3>
         <p>Another attempt at 3D modelling in Blender.</p>
       </div>
