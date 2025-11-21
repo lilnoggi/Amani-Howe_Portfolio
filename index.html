@@ -2,48 +2,267 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Amani Howe Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/810acf86fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <a href="index.html">Home</a>
-        <p>Game Developer | Programmer | Creative Thinker</p>
-</div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="devlog.html">Dev Logs</a>
-            <a href="skills.html" target="_blank">Skills</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="media/me.PNG" alt="A professional photo of me.">
+    <nav id="desktop-nav">
+        <div class="logo">Amani Howe</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="home-content">
-            <h1>Hi, I'm <span>Amani</span></h1>
-            <h3>I'm a <span class="typing-text"></span></h3>
-           <p>Hello, I’m Amani Howe — a passionate game developer and programmer. I enjoy creating immersive experiences and exploring new game development techniques.<br>
-Currently, I'm improving my skills in C#, Unity, and web development.<br>
-Rather than using a PowerPoint template to showcase my work, I decided to create my own portfolio website using HTML, CSS, and JavaScript.</p>
-    <div class="social-icons">
-                <a href="https://discordapp.com/users/685971125620048018" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://github.com/lilnoggi"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-unity"></i></a>
-                <a href="mailto:itsamanihd@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Amani Howe</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <a href="contact.html" class="btn">Contact me</a>
+            <div class="menu-links">
+                <li><a href="#about" onClick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/media/Profile_Pic.JPG" alt="Amani Howe Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Amani Howe</h1>
+            <p class="section__text__p2">Programmer / Video Editor</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onClick="window.open('./media/amani_howe_cv2025.pdf')">
+                My CV
+            </button>
+            <button 
+                class="btn btn-color-1" 
+                onClick="location.href='./#contact'">
+                Contact Me
+            </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./media/linkedin.png" 
+                alt="Linkedin icon" 
+                class="icon" 
+                onClick="location.href='https://www.linkedin.com/in/amani-howe-298bb5291/'"/>
+                <img
+                src="./media/github.png"
+                alt="GitHub icon"
+                class="icon"
+                onClick="location.href='https://github.com/lilnoggi'"/>
+            </div>
         </div>
     </section>
-        <footer>
-        <p>© 2025 Amani Howe</p>
-    </footer>
-    <script src="typing-effect.js"></script>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./media/About_Pic.JPG" 
+                alt="About Me picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./media/experience.png" 
+                        alt="Experience icon" 
+                        class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Video Editor</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./media/education.png" 
+                        alt="Education icon" 
+                        class="icon" />
+                        <h3>Education</h3>
+                        <p>Bsc Hons <br> Sep 2025 - Current <br>SAE Insitute London - Games Programming</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Talk about Uni/education here!</p>
+                </div>
+            </div>
+        </div>
+        <img 
+    src="./media/arrow.png" 
+    alt="Arrow icon" 
+    class="icon arrow" 
+    onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1>Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Games Programmer</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Unreal Engine</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Video Editor</h2>
+                    <div class="artical-container">
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Adobe Premiere Pro</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Audacity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Adobe After Effects</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Adobe Media Encoder</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Adobe Audition</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./media/checkmark.png" 
+                            alt="Checkmark icon"
+                            class="icon">
+                            <div>
+                                <h3>Adobe Photoshop</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./media/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"/>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
